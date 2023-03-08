@@ -1,0 +1,81 @@
+@font-face {
+    font-family: "century-gothic";
+    src: url('./fonts/Century Gothic.otf') format("opentype");
+    src: url('./fonts/Century Gothic.ttf') format("truetype");
+    src: url('./fonts/Century Gothic.eot') format("embedded-opentype");
+}
+
+@font-face {
+    font-family: "optima";
+    src: url('./fonts/optimaU.otf') format("opentype");
+    src: url('./fonts/optimaU.ttf') format("truetype");
+    src: url('./fonts/optimaU.eot') format("embedded-opentype");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+
+* {
+    font-family: "optima", sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+body {
+    background-color: #131b39;
+    height: 100vh;
+    margin: 0;
+}
+
+/********************
+* video game screen *
+********************/
+.game-title h1 {
+    /***** Flappy Bird *****/
+    text-align: center;
+    font-family: 'optima', cursive;
+    color: #EAA501;
+    font-size: 3em;
+    line-height: 150%;
+    letter-spacing: 4px;
+    text-shadow: 2px 4px rgba(250, 250, 250, 1);
+    margin: 0;
+    position: relative;
+    top: 10px;
+}
+
+.game-screen {
+    background-color: transparent;
+    /* background-color: rgb(69, 184, 194); */
+    background-image: url('./img/end.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 300px;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+    top: 50px;
+}
+
+canvas {
+    display: block;
+    width: 300px;
+    height: 500px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.game-description {
+    color: #f0f0f0;
+    line-height: 2em;
+    text-align: center;
+}
+
+#printScoring{
+    text-shadow: 1px 0px rgba(250, 250, 250, 0.8);
+    margin-bottom: 2px;
+    margin-left: 10px;
+    left: center;
+    font-family: 'optima', cursive;
+    color: #EAA501;
+}
